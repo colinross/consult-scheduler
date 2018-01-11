@@ -20,3 +20,12 @@ As an api-client, I need to be able to make a request to the platform to create 
 ### Technical Requirements:
   - RESTful resource
   - Use the (JSON-API)[http://jsonapi.org/] spec for both requests and responses.
+  - Use (ISO-8601)[https://en.wikipedia.org/wiki/ISO_8601] for Date/DateTime values in requests/response.
+
+
+
+## Setup
+Just run `bin/setup` from the repository root to get your environment set up
+
+- Run `rake spec` to run the tests
+- Run `rails server` to run a server
