@@ -19,7 +19,7 @@ class Appointment < ApplicationRecord
   # after initialization hook
   def init
     self.end_date ||= default_end_date
-    self.duration ||= ((end_date - start_date) / 60).to_i if start_date && end_date
+    self.duration ||= ((end_date - start_date) / 60).to_i if (start_date.present? && end_date.present?) && duration.blank?
   end
 
   # calculate the default end_date given a start_date and duration are available
