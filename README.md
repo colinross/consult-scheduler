@@ -18,14 +18,20 @@ As an api-client, I need to be able to make a request to the platform to create 
   - If a range is passed in, the system should schedule the appointment for the next available time that fits it.
 
 ### Technical Requirements:
-  - RESTful resource
-  - Use the (JSON-API)[http://jsonapi.org/] spec for both requests and responses.
+  - Maintain the Appointment as a RESTful that uses the (JSON-API)[http://jsonapi.org/] spec for both requests and responses.
   - Use (ISO-8601)[https://en.wikipedia.org/wiki/ISO_8601] for Date/DateTime values in requests/response.
-
-
 
 ## Setup
 Just run `bin/setup` from the repository root to get your environment set up
 
 - Run `rake spec` to run the tests
 - Run `rails server` to run a server
+
+### Other Notes
+Feel free to add comments to your own code (or ours) as you wish. This might also allow help communicate why you 
+may decide to make certain choices.
+
+Don't overthink it too much, we aren't looking for hours and hours of develoment work, just a small sample of code
+in order to drive our in-house interview process.
+
+
